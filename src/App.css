@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+a {
+  text-decoration: none;
+  color: #0066cc;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav ul li {
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+nav ul li:hover {
+  color: #0066cc;
+}
+#signup-btn{
+    width: 60px;
+    height: 30px;
+    border-radius: 25px;
+    border: none;
+    background: black;
+    color: white;
+    margin-top: -3px;
+    align-items: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile input {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.hero {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.hero-content p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #555;
+}
+
+.meta {
+  font-size: 13px;
+  color: #888;
+}
+
+.tag {
+  font-size: 13px;
+  color: #cc0000;
+  display: block;
+  margin-top: 10px;
+}
+
+/* LATEST NEWS */
+.latest-news {
+  padding: 0 40px 60px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0 20px;
+}
+
+.section-header h2 {
+  font-size: 22px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #fafafa;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #555;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #111;
+  color: white;
+}
