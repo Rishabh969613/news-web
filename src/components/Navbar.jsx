@@ -1,7 +1,7 @@
 import React from 'react'
 import { Outlet, Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ onCategoryChange }) => {
   return (
     <>
       {/* <header>
@@ -28,17 +28,17 @@ const Navbar = () => {
         </div>
       </header> */}
 
-
-      <header>
+    
+    <header>
     <div className="logo">DailyScope.</div>
     <nav>
       <ul>
-        <li><Link to="/">Home</Link></li> 
-        <li>News</li>
-        <li>Sports</li>
-        <li>Entertainment</li>
-        <li>Life</li>
-        <li>Tech</li>
+        <li id="home"><Link to="/">Home</Link></li> 
+        <li onClick={() => onCategoryChange("general")}>General</li>
+        <li onClick={() => onCategoryChange("sports")}>Sports</li>
+        <li onClick={() => onCategoryChange("entertainment")}>Entertainment</li>
+        <li onClick={() => onCategoryChange("health")}>Science</li>
+        <li onClick={() => onCategoryChange("technology")}>Tech</li>
       </ul>
     </nav>
     <div className="profile">
